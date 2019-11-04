@@ -1,6 +1,6 @@
 #include <TheThingsNetwork.h> //LoRaWAN Library
 
-#include <SoftwareSerial.h>
+#include <SoftwareSerial.h> // Software Serial Library
 #include <DS3231.h>
 #include <dht11.h>
 
