@@ -4,19 +4,19 @@
 #include <DS3231.h>
 #include <dht11.h>
 
-
-
-
 const char *appEui = "0000000000000000";
 const char *appKey = "00000000000000000000000000000000";
 
 #define loraSerial Serial1
+// Set frequency plan with TTN_FP_EU868 or TTN_FP_US915
 #define freqPlan TTN_FP_EU868
-TheThingsNetwork ttn(loraSerial, debugSerial, freqPlan);
-
 
 SoftwareSerial loraSerialPins(8, 9); //Software Serial pins
 #define debugSerial Serial
+TheThingsNetwork ttn(loraSerial, debugSerial, freqPlan);
+
+
+
 
 dht11 DHT;
 #define         MG_PIN                       (A0)
